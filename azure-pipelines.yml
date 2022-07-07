@@ -28,6 +28,6 @@ steps:
     resourceGroupName: 'arm-introduction-atu'
     location: 'West Europe'
     templateLocation: 'Linked artifact'
-    csmFile: '**/templates/0ResourceGroup_StorageAccount.json'
-    csmParametersFile: '**/templates/0ResourceGroup_StorageAccount.parameters.json'
+    csmFile:  '$(Pipeline.Workspace)/s/deploy/azuredeploy-sample-webapp.json'
+    csmParametersFile: '$(Pipeline.Workspace)/s/deploy/azuredeploy-sample-webapp.parameters.json'
     deploymentMode: 'Validation'
